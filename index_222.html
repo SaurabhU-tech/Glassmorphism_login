@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is an awesome website" />
+    <link rel="stylesheet" type="text/css" href="style_222.css" />
+    <title>Glassmorphism LOG_IN UI</title>
+  </head>
+  <body>
+    <form class="LOG">
+      <h1>LOG IN</h1>
+      <label for="rememberMe">Username</label>
+      <div>
+        <input
+          type="text"
+          name="Enter Username"
+          height="40px"
+          width="200px"
+          placeholder="Enter Full Name"
+        />
+      </div>
+
+      <label for="rememberMe">Email</label>
+      <div>
+        <input type="email" name="Enter Email" placeholder="Enter Email" />
+      </div>
+
+      <label for="rememberMe">Password</label>
+      <div>
+        <input
+          type="password"
+          name="Enter Password"
+          placeholder="Enter Password"
+        />
+      </div>
+
+      <div>
+        <span
+          ><input
+            type="checkbox"
+            name="checkbox"
+            value="IsRememberMe"
+            id="checkme"
+        /></span>
+        <label for="checkme">Remember me</label>
+      </div>
+
+      <div>
+        <button type="submit" class="butt">Submit</button>
+      </div>
+
+      <div class="div1">
+        <span class="span1"><a href="#">Sign Up</a></span>
+        <span class="span1"><a href="#">Forget Password</a></span>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".LOG"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+      });
+    </script>
+  </body>
+</html>
